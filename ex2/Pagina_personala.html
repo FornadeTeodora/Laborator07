@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<title > Descrierea mea </title>
+<body>
+   <head>
+       <style>
+	   
+	       body { 
+		   background-color: rgb(250,213,255);
+		   }
+	       
+		   h3 {
+		     text-align: center;
+			 color: rgb(210,115,210);
+			 font-size: 15px;
+			 font-family: "Sans-serif";
+		   }
+		   
+		   	       img {
+				   opacity: 0.7;
+                 display: block;
+                 margin-left: auto;
+                  margin-right: auto;
+				  margin-color: rgb(64,24,78);
+                  
+                       }
+		   .photo 
+		     {
+	
+			   border-style: double ;
+			   border-width: 15px;
+			   border-color: #3D3436;
+			   border-radius: 15px;
+		     }
+		   
+            .text 
+			  {
+			  text-align: center;
+			  color: purple;
+			  }
+		   
+		   table 
+		   {
+		    border: 5px solid rgb(122,103,122);
+			border-collapse: collapse;
+			border-color: purple;
+		   }
+		   
+		   .list {
+		   border-style: solid;
+		   border-width: 7px;
+		   border-color: #8E747F;
+		   border-radius: 5px;
+		   }
+		   
+		   p{
+		      background-color: #E6D8DF;
+			  font-family: "dancing script";
+			  font-size:20px;
+			  font-style: italic;
+		   }
+		   
+		   h4{
+		    font-family:"syne-mono";
+			font-size: 17px;
+			font-style: bold;
+			
+			
+			} 
+	   </style>
+	   
+	   <script>
+	      function veziViitor()
+		  {
+		     document.getElementById("NumeProfil").innerHTML="Front End Web Developer";
+			 document.getElementById("aprof").innerHTML="Experiente pe care vreau sa le traiesc in viitor:"
+			 document.body.style.backgroundColor="Grey";
+			
+			 
+			 var tabel =document.getElementById("tabelEducatie");
+			 tabelEducatie.rows[0].cells[0].innerHTML=" OSUT";
+			 tabelEducatie.rows[0].cells[1].innerHTML=" ";
+			 tabelEducatie.rows[0].cells[2].innerHTML=" ";
+			 tabelEducatie.rows[0].cells[3].innerHTML=" oportunitatea de a cunoaste oameni noi ";
+			 tabelEducatie.rows[1].cells[0].innerHTML=" City break "
+			 tabelEducatie.rows[1].cells[1].innerHTML=" "
+			 tabelEducatie.rows[1].cells[2].innerHTML=" "
+			 tabelEducatie.rows[1].cells[3].innerHTML=" experiente noi";
+			 tabelEducatie.rows[2].cells[0].innerHTML=" ";
+			 tabelEducatie.rows[2].cells[1].innerHTML=" ";
+			 tabelEducatie.rows[2].cells[2].innerHTML=" ";
+			 tabelEducatie.rows[2].cells[3].innerHTML=" ";
+			 
+			 document.getElementById("imagineNoua").src="1.jpg";
+			 document.getElementById("imagineNoua").style.opacity="0.7";
+			 document.getElementById("imagineNoua").style.border="1em solid";
+			 document.getElementById("imagineNoua").style.border.radius="10px";
+		     document.getElementById("citat").innerHTML="Traieste prezentul invatant din trecut si investind in viitor.";
+			 
+		   var h3= document.getElementsByTagName("h3");
+		   var i;
+		   
+		  for(i = 0; i < h3.length; i++)
+		  {
+          h3[i].style.color= "white";
+          h3[i].style.fontFamily ="cursive";
+
+          }
+		  
+		  var td= document.getElementsByTagName("td");
+		  for(i=0; i< td.length; i++)
+		  {
+		  tr[i].style.color="white";
+		  tr[i].style.fontFamily="italic"
+		  }
+		  
+        
+		  }
+		 
+		  function Age()
+		  {
+		  var azi= new Date;
+		  var varstaMea;
+		  
+		  var anNas = document.getElementById("varsta").innerHTML;
+		  varstaMea = azi.getFullYear() - parseInt(anNas);
+		  
+		  document.getElementById("varsta").innerHTML = varstaMea;
+		  }
+	   </script>
+	   
+   </head>
+  
+ <div> <h3 id="NumeProfil"> Fornade Teodora- Cristiana </h3>
+    
+  <h3 align="center" color="purple"> E-mail: teofornade01@yahoo.com </h3>
+  <p onmouseover = "Age()" id = "varsta" align=center> 2001</p>
+  
+  <img id="imagineNoua" class="photo" src="DSC_4345.jpg" width="140" height="200" align="center">
+  
+  <button onclick="veziViitor()">Alta viata</button>
+  
+</div>
+<h3 id="aprof"> Discipline: </h3>
+<table id="tabelEducatie" class="text " align=center>
+  <tr>
+     <td> 1 </td>
+     <td> Programarea calculatoarelor </td>
+     <td> Anul I </td>
+     <td> <a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3104.pdf"> Link disciplina</a></td>
+  </tr>
+
+   <tr>
+     <td> 2 </td>
+     <td> Informatica Aplicata </td>
+     <td> Anul I </td>
+     <td> <a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3106.pdf"> Link disciplina</a> </td>
+  </tr>
+  
+   <tr>
+     <td> 3 </td>
+     <td> Algebra liniara </td>
+     <td> Anul I </td>
+     <td> <a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3102.pdf"> Link disciplina</a> </td>
+  </tr>
+</table>
+
+<div>
+
+<p id="citat"> “Educatia este ceea ce ramane dupa ce ai uitat tot ce ai invatat la scoala.”- Albert Einstein </p>
+<h4> Hobby-uri </h4>
+  <ul class="list">
+    <li>Cititul</li>
+    <li>Plimbatul in natura </li>
+    <li>Fabricarea de cercei prin tehnica quilling </li>
+</ul>
+
+</div>
+
+
+</body>
+ 
+</html>
